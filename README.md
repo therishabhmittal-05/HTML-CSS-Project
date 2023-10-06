@@ -1,2 +1,2 @@
-# HTML
-Drawing the structure of web application
+# HTML - CSS
+Drawing the structure and design of web application and 
