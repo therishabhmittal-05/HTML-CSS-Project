@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
     <style>
-        p {
-            margin: 100px;
-            width: 200px;
-            height: 100px;
-            padding: 40px;
-            border: 10px solid;
-            outline: 10px double red;
-            box-sizing: border-box;
-        }
+      p {
+        margin: 100px;
+        width: 200px;
+        height: min-content;
+        padding: 40px;
+        border: 10px solid;
+        /* outline: 10px double red; */
+        box-sizing: border-box;
+      }
+      p:hover {
+        outline: black dotted 10px;
+        color: pink;
+      }
+      p:nth-child(even) {
+            color: red
+      }
+      a {
+        color: black;
+        margin: 100px;
+      }
+      a:hover {
+        outline: green dotted 10px;
+      }
+      title {
+        display: block;
+      }
+      [data-type] {
+        color: red;
+      }
+      p{
+        display: inline-block;
+      }
+      .my-element::before {
+  content: 'Prefix - ';
+}
+
+    ::selection{
+        background: red;
+    }
     </style>
-</head>
-<body>
-    <p>I am  a paragraph and has some words in it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus distinctio dolore voluptatum qui dolorem perferendis tenetur quae fugit est vitae ducimus laudantium enim veritatis quos dolor odit ipsum vel!</p>
-    <p>I am  a paragraph and has some words in it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, temporibus distinctio dolore voluptatum qui dolorem perferendis tenetur quae fugit est vitae ducimus laudantium enim veritatis quos dolor odit ipsum vel!</p>
-</body>
+  </head>
+  <body>
+    <p>
+      I am a paragraph and has some words in it. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Expedita, temporibus distinctio dolore
+      voluptatum qui dolorem perferendis tenetur quae fugit est vitae ducimus
+      laudantium enim veritatis quos dolor odit ipsum vel!
+    </p>
+    <p>
+      I am a paragraph and has some words in it. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Expedita, temporibus distinctio dolore
+      voluptatum qui dolorem perferendis tenetur quae fugit est vitae ducimus
+      laudantium enim veritatis quos dolor odit ipsum vel!
+    </p>
+    
+    <p class="my-element">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati fuga impedit rerum dicta. Accusamus numquam minus saepe dolorem explicabo quam aliquid repudiandae aspernatur, non mollitia a cumque ipsam veniam consequatur.</p>
+    <a href="https://www.google.com/">Rishabh</a>
+    <div data-type="primary"><h1>Mittal</h1></div>
+  </body>
 </html>
