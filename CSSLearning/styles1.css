@@ -2,25 +2,39 @@ p{
     box-sizing: border-box;
     border: 2px solid black;
     background-color: grey;
-    width: 500px;
+    
+    max-height: min-content;
     
     padding: 20px;
+    /* display: inline; */
 }
+body{
+    margin: 0;
+}
+
 .child1{
-    min-height: 100px;
+    /* min-height: 100px; */
+    /* align-self: stretch; */
+    
 }
 .child2{
-    min-height: 200px;
+    /* min-height: 200px; */
+    /* width: 200rem; */
 }
 .block{
     background-color: yellow;
     /* box-sizing: border-box; */
     padding: 20px;
-    flex-wrap: wrap;
     display:flex;
-    /* justify-content: space-between; */
-    align-items: start;
-    align-content: center;
-    height: 500px;
+    /* flex-wrap:wrap; */
+    flex-direction: row;
+    
+    flex: none ;
+   height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* height: 500px; */
     
 }
